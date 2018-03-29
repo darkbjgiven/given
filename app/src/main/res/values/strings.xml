@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">知者</string>
+    <string name="app_back">返回</string>
+    <string name="app_home">主页</string>
+    <string name="app_topic">话题</string>
+    <string name="app_mine">我的</string>
+    <string name="searcher">搜索:</string>
+</resources>

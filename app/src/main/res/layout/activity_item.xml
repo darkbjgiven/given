@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/activity_back_title"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title1"
+                android:text="什么是物种入侵现象？"
+                android:textSize="20sp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/item_image1"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/picture_3"
+                    android:layout_toLeftOf="@id/item_text1"/>
+                <TextView
+                    android:id="@+id/item_text1"
+                    android:layout_centerVertical="true"
+                    android:text="Given 发布于44分钟前"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:text="无意引种　很多外来入侵生物是随人类活动而无意传入的。通常是指随人及其产品通过飞机、轮船、火车、汽车等交通工具，作为偷渡者或被引入到新的环境。随着国际贸易的不断增加，对外交流的不断扩大，国际旅游业的快速升温，外来入侵生物借助这些途径越来越多地传入我国。除交通工具外，建设开发、军队转移、快件服务、信函邮寄等也会无意引入外来物种。
+自然入侵
+这种入侵不是人为原因引起的，而是通过风媒、水体流动或由昆虫、鸟类的传带，使得植物种子或动物幼虫、卵或微生物发生自然迁移而造成生物危害所引起的外来物种的入侵。
+许多外来物种随着交通路线进入和蔓延，加上公路和铁路周围植被通常遭到破坏而退化，因此这些地方通常是外来物种最早或经常出现的地方。如豚草多发生于铁路公路两侧，最初是随火车从朝鲜传入的；新疆的褐家鼠和黄胸鼠也是通过铁路从内地传入的。
+无意引进
+船只携带
+这种引进方式虽然是人为引进的，但在主观上并没有引进的意图，而是伴随着进出口贸易，海轮或入境旅游在无意间被引入的。
+在海洋中，经过亿万年所形成的数以万计的物种，由于受到外界环境的限制，如海洋间大陆的阻隔、温度的差别以及低盐的河口径流等，使许多种生物仅能生活在一个局部的海域，成为该海域的地方种或本地种。也有些生物，由于其成体或幼体游动或漂浮，海流和海潮的传送，以及某些动物（如海龟、鲸和海鸟等）的携带，使其分布范围扩大，成为广布种。但是有些种类的转移却与人类的船只携带有关。
+携带的方式主要通过压舱水的异地排放。压舱水一般来自船舶的始发港或途径的沿岸水域。据估计世界上每年由船舶转移的压舱水有100亿吨之多。因此许多细菌和动植物也被吸入并转移到下一个挂靠的港口。我国沿岸海域有害赤潮生物有16种左右，其中绝大部分主要是通过压舱水等途径在全世界各沿岸海域传播。外来赤潮生物种加剧了我国沿海赤潮现象的发生。另一种通过船舶引入的方式是营固着生活的生物（如藤壶）等附着在船只上被带入新的领域。这些外来生物被引入后，有的种类根本破坏或改变了原来的生态面貌，例如食肉性的红螺（Rapana thomasiana）1947年自日本海迁移到黑海，十年后几乎将黑海塔乌塔海滩本地的牡蛎完全消灭。
+船上装载的生物繁殖体有时可能被丢弃或在船沉没后逸出，随浪冲出海岸。东海和南海一些无人小岛上生长的匙叶伽兰菜（Kalanchoe spathulata）和芦荟等，便可能是早年海船上的弃物。鼠岛就是这样一个小岛，曾经有一条船在鼠岛附近沉没，船上的老鼠就上了岛。而岛上并没有老鼠的天敌，岛上的鸟蛋对老鼠来说是极佳的营养品。
+海洋垃圾
+随着废弃的塑料物和其他人造垃圾漂浮的海洋生物正向南极洲和一些热带岛屿进犯，对当地的物种造成威胁。这些垃圾使向亚热带地区扩散的生物增加了1倍，在高纬度地区甚至增加了2倍多。与像椰子或木材之类的自然漂浮物相比，海洋生物更喜欢附在塑料容器等不易被降解的垃圾上漂浮，借助这些载体，它们几乎可以漂浮到世界的任何地方。
+有意引进
+应当说，这是外来生物入侵的最主要的渠道，世界各国出于发展农业、林业和渔业的需要，往往会有意识引进优良的动植物品种。如20世纪初，新西兰从中国引种猕猴桃，美国从中国引种大豆等。但由于缺乏全面综合的风险评估制度，世界各国在引进优良品种的同时也引进了大量的有害生物，如大米草、水花生、福寿螺等。这些入侵种由于被改变了物种的生存环境和食物链，在缺乏天敌制约的情况下泛滥成灾。全世界大多数的有害生物都是通过这种渠道而被引入世界各国的。防治外来物种入侵的国际合作及他国的立法实践　外来物种入侵作为一种全球范围的生态家现象已逐渐成为导致牺牲多样性丧失、物种灭绝的重要原因。根据国际自然资源保护联盟提供的数据，目前全球濒临灭绝危险的野生动物共有10954种，全球鱼类的1/3，哺乳类的、鸟类的、爬行类的1/4，都已高度濒危，如果照此速度发展到2100年，地球上1/3到2/3的植物、动物以及其他有机体将消失，这些物种大规模死亡的现象和6500万年前恐龙的消亡差不多。" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>
