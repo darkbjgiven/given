@@ -10,7 +10,9 @@ import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
-import org.litepal.LitePal;
+import com.example.lenovo.given.Home.HomeFragment;
+import com.example.lenovo.given.Mine.MineFragment;
+import com.example.lenovo.given.Topic.TopicFragment;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 

@@ -1,4 +1,4 @@
-package com.example.lenovo.given;
+package com.example.lenovo.given.Home;
 
 ////每一个字段对应的表中的每一列。建立主页我们自己推送的home item的类，用于建表。
 public class HomeItem {

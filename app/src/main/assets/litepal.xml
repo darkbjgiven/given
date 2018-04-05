@@ -3,6 +3,6 @@
     <dbname value="HomeItemStore" />
     <version value="1.0"/>
     <list>
-        <mapping class="com.example.lenovo.given.HomeItem"/>
+        <mapping class="com.example.lenovo.given.Home.HomeItem"/>
     </list>
 </litepal>
