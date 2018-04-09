@@ -19,11 +19,11 @@ import java.util.Random;
 public class TopicFragment extends Fragment {
     private List<Topic> TopicItemList=new ArrayList<>();
     private Topic[] topics={
-        new Topic(R.drawable.picture_3,"firsttopic","ahaaaaaaaaaaaaaaaaaaaaaaaaaa"),
-        new Topic(R.drawable.picture_4,"secondtopic","wbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"),
+        new Topic(R.drawable.picture_1,"firsttopic","ahaaaaaaaaaaaaaaaaaaaaaaaaaa"),
+        new Topic(R.drawable.picture_2,"secondtopic","wbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"),
         new Topic(R.drawable.picture_3,"thirdtopic","rcccccccccccccccccccc"),
         new Topic(R.drawable.picture_4,"forthtopic","idddddddddddddddddddddddddd"),
-        new Topic(R.drawable.picture_3,"fifthtopic","leeeeeeeeeeeeee")
+        new Topic(R.drawable.picture_5,"fifthtopic","leeeeeeeeeeeeee")
     };
     private TopicAdapter adapter;
 
