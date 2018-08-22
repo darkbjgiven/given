@@ -19,6 +19,8 @@
         </activity>
         <activity android:name=".ItemActivity" />
         <activity android:name=".SearcherActivity" />
+        <activity android:name=".Mine.MinePerson" />
+        <activity android:name=".Home.HomeNewsActivity" />
     </application>
 
 </manifest>

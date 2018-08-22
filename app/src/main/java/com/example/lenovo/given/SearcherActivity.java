@@ -9,8 +9,6 @@ import android.widget.Button;
 
 public class SearcherActivity extends AppCompatActivity {
 
-    private Button backtitlebutton3;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,8 +17,8 @@ public class SearcherActivity extends AppCompatActivity {
     }
 
     private void initView() {
-        backtitlebutton3=findViewById(R.id.back_title_button3);
-        backtitlebutton3.setOnClickListener(new View.OnClickListener(){
+        Button searcherbutton1 = findViewById(R.id.searcher_button1);
+        searcherbutton1.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
                 Intent intent= new Intent(SearcherActivity.this,MainActivity.class);

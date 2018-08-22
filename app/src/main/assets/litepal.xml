@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <litepal>
     <dbname value="HomeItemStore" />
-    <version value="1.0"/>
+    <version value="1.1"/>
     <list>
         <mapping class="com.example.lenovo.given.Home.HomeItem"/>
+        <mapping class="com.example.lenovo.given.LitePal.HomeItemDemo"/>
     </list>
 </litepal>

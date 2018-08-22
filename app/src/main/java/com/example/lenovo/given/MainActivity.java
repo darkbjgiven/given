@@ -9,10 +9,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.lenovo.given.Home.HomeFragment;
+import com.example.lenovo.given.LitePal.HomeItemDemo;
 import com.example.lenovo.given.Mine.MineFragment;
 import com.example.lenovo.given.Topic.TopicFragment;
+
+import org.litepal.LitePal;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -43,6 +47,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         //LitePal.getDatabase();
+        LitePal.initialize(this);
 
         fragmentManager=getSupportFragmentManager();//获取fragment管理器。
         initView();// 初始化界面控件。
@@ -76,6 +81,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         navigationmine=findViewById(R.id.navigation_mine);
         navigationmine.setOnClickListener(this);
+
+        HomeItemDemo homeItemDemo=new HomeItemDemo();
+        homeItemDemo.setTitle("第一个标题");
+        homeItemDemo.setContent("第一篇文章");
+        homeItemDemo.setId(1);
+        homeItemDemo.setPublishdate(null);
+        homeItemDemo.save();//此处存储失败，用save throws检查异常。
+        if (homeItemDemo.save()){
+            Toast.makeText(this,"建立成功",Toast.LENGTH_LONG).show();
+        }else {
+            Toast.makeText(this,"存储失败",Toast.LENGTH_SHORT).show();
+        }
 
     }
 
