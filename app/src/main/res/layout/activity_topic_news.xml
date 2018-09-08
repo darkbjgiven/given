@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <include layout="@layout/activity_back_title"
+        android:id="@+id/include_topic_news" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include_topic_news"
+        android:padding="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/topic_news_imageview"
+                android:layout_width="match_parent"
+                android:layout_height="165dp"
+                android:paddingTop="5dp"
+                android:background="@drawable/picture_3"
+                />
+
+            <TextView
+                android:id="@+id/topic_news_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/topic_news_date"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:text="知者APP产品介绍"
+                android:textColor="@color/navigation_unused"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/topic_news_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/topic_news_imageview"
+                android:paddingTop="5dp"
+                android:text="校科协发布" />
+
+            <TextView
+                android:id="@+id/topic_news_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:paddingTop="5dp"
+                android:background="#3f3F51B5"
+                android:text="我们的项目，就是旨在引导他们制定自己的大学规划，给他们开拓视野，让他们可以看到贴近自己生活环境的优秀的人是怎样规划大学的，也许这些人只是比他们高一个年级，但是这些优秀的人有自己的大学规划，知道怎么过好这个大学，而不是报社、新闻上他们从来没有想过要去模仿、学习的对象。
+为此我们对我们的app规划了三个板块。
+第一个是经验板块，根据客户选择的标签，推送经验文章，怎么规划大学生活，竞赛怎么准备，怎么选择社团。（在每篇文章下方可以进行评论）同时，在有需要的文章下方会附有相关链接（例如，关于参加某竞赛要学习的知识所需看到的书籍或者视频的链接）。
+第二个是督促板块，根据客户选择的大学生活（划分不同的种类），以及想在大学里得到什么（标签），然后介绍这方面很有成就的，或者积极参与自己计划的（拥有类似计划的人群）。
+第三个是个人板块，个人空间里，可以调整自己的计划进度，提示自己，可以查看客户关注的人的计划以及其进展进度。同时使用GPS技术。（划分学校的区域为学习、运动、宿舍区域，相同区域的人可以查看有多少人在运动等）
+（注：在首次启动APP后，会引导用户进行大学规划，并且给出不同的标签和种类以帮助引导，比如，竞赛达人、社团、运动达人等）
+我们“知者”项目的商业模式是一个由客户价值主张、资源和生产过程、盈利方式构成的三维立体模式。“知者”项目始终秉承“多展示、勤互动、速渗透”的营销理念，采用互动营销与关系营销相结合的市场推广方案，打造“知者”大学规划定制的时尚文化，使进行大学规划制定成为一种时尚。
+综上所述，我们目的是引导大学生规划自己的大学生活，开拓视野，认识到自己可以做得更好。我们的“互联网+”知者项目的核心理念是：制定你的大学规划，让你更加优秀。
+"
+                android:layout_below="@+id/topic_news_date"/>
+
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

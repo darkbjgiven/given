@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/topic_cardview"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="5dp"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_margin="19dp"
     app:cardCornerRadius="4dp"
     style="?android:attr/buttonBarStyle"
     app:cardElevation="8dp">
@@ -18,7 +21,7 @@
             android:id="@+id/topic_image"
             android:layout_width="match_parent"
             android:scaleType="centerCrop"
-            android:layout_height="100dp" />
+            android:layout_height="135dp" />
         <TextView
             android:id="@+id/topic_text_title"
             android:layout_width="wrap_content"
@@ -29,6 +32,7 @@
             android:maxLines="2"
             android:textSize="16sp"
             android:layout_margin="4dp"
+            android:ellipsize="end"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </LinearLayout>

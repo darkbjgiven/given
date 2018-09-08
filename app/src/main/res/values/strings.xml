@@ -1,12 +1,13 @@
 <resources>
     <string name="app_name">知者</string>
     <string name="app_back">返回</string>
-    <string name="app_home">主页</string>
-    <string name="app_topic">话题</string>
+    <string name="app_home">经验</string>
+    <string name="app_topic">督促</string>
     <string name="app_mine">我的</string>
     <string name="searcher">搜索:</string>
     <string name="mine_name">你的名字</string>
-    <string name="mine_publish">我的文章</string>
+    <string name="mine_publish">我的大学规划</string>
+    <string name="mine_article">我的创作</string>
     <string name="mine_collection">我的收藏</string>
     <string name="mine_focus">我的关注</string>
     <string name="mine_setting">软件设置</string>

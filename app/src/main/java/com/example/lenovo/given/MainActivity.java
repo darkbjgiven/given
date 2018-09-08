@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         //LitePal.getDatabase();
-        LitePal.initialize(this);
+        //LitePal.initialize(this);
 
         fragmentManager=getSupportFragmentManager();//获取fragment管理器。
         initView();// 初始化界面控件。
@@ -82,6 +82,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         navigationmine=findViewById(R.id.navigation_mine);
         navigationmine.setOnClickListener(this);
 
+        /*
         HomeItemDemo homeItemDemo=new HomeItemDemo();
         homeItemDemo.setTitle("第一个标题");
         homeItemDemo.setContent("第一篇文章");
@@ -93,7 +94,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }else {
             Toast.makeText(this,"存储失败",Toast.LENGTH_SHORT).show();
         }
-
+        */
     }
 
     //重写onclick,设置选择菜单item的点击方法。
