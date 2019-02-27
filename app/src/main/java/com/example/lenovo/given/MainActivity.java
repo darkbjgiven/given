@@ -1,6 +1,7 @@
 package com.example.lenovo.given;
 
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
@@ -14,6 +15,7 @@ import android.widget.Toast;
 import com.example.lenovo.given.Home.HomeFragment;
 import com.example.lenovo.given.LitePal.HomeItemDemo;
 import com.example.lenovo.given.Mine.MineFragment;
+import com.example.lenovo.given.SQLite.DataBaseHelper;
 import com.example.lenovo.given.Topic.TopicFragment;
 
 import org.litepal.LitePal;
@@ -40,6 +42,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     // 定义FragmentManager对象管理器。
     private FragmentManager fragmentManager;
+
+    private SQLiteDatabase db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -95,6 +99,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Toast.makeText(this,"存储失败",Toast.LENGTH_SHORT).show();
         }
         */
+
+        //主活动oncreate里：
+        DataBaseHelper dataBaseHelper = new DataBaseHelper(this, "HomeData.db", null, 1);
+        db=dataBaseHelper.getWritableDatabase();
+
     }
 
     //重写onclick,设置选择菜单item的点击方法。

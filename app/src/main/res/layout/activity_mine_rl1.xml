@@ -1,8 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <include layout="@layout/activity_back_title"/>
+    <include layout="@layout/activity_back_title"
+        android:id="@+id/include2" />
+
+    <TextView
+        android:id="@+id/rl1_line"
+        android:layout_width="3dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/include2"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:background="#3f3F51B5" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include2"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@+id/rl1_line"
+        android:layout_toRightOf="@+id/rl1_line">
+
+        <LinearLayout
+            android:id="@+id/rl1_Line1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  大一第一学期  "
+                android:textSize="19sp"
+                android:background="@drawable/shape_1"/>
+
+            <LinearLayout
+                android:id="@+id/rl1_L1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/activity_mine_card1"/>
+                <include layout="@layout/activity_mine_card2"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  大一第二学期  "
+                android:textSize="19sp"
+                android:background="@drawable/shape_1"/>
+
+            <LinearLayout
+                android:id="@+id/rl1_L2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/activity_mine_card3"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
 
 </RelativeLayout>
